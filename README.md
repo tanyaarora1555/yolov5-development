@@ -61,5 +61,5 @@ python3 detect_object.py --onnx ./detection_weights/best.onnx --source "./strawb
   ``` bash
   python3 mask_video.py
   ```
-
+For changing the video and model paths in mask_video.py we need to give the path in the code.
    
