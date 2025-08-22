@@ -43,7 +43,7 @@ This project is organized into two main sections: one for object detection and o
   python detect_object.py --onnx /path/to/your/best.onnx --source <path_to_your_video> --names /path/to/your/classes.names --img-size 416
   ```
 ```bash
-python3 detect_object.py --onnx /home/tanya/yolov5-development/detection_weights/best.onnx --source "./strawberry.mp4" --names ./classes.names --img-size 416
+python3 detect_object.py --onnx ./detection_weights/best.onnx --source "./strawberry.mp4" --names ./classes.names --img-size 416
 ```
 # Segmentation
 
