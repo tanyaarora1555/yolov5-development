@@ -34,6 +34,10 @@ This project is organized into two main sections: one for object detection and o
    Here 416 is the image size because the model was trained for 416 image size
 # Object Detection
 ## Inferencing 
+* To go the detection directory
+  ``` bash
+  cd detection
+  ```
 * The command for inferencing using onnx model
   ``` bash
   python detect_object.py --onnx /path/to/your/best.onnx --source <path_to_your_video> --names /path/to/your/classes.names --img-size 416
@@ -48,6 +52,14 @@ python3 detect_object.py --onnx /home/tanya/yolov5-development/detection_weights
 ```bash
  python3 segment/train.py --weights yolov5s-seg.pt --data /home/tanya/seg/data.yaml --epochs 25 --img 640 --batch-size 16
  ```
- ## Inferencing 
+ ## Inferencing
+ * To go the segmentation directory
+  ``` bash
+  cd segmentation
+  ```
+* For inferencing we need to run
+  ``` bash
+  python3 mask_video.py
+  ```
 
    
