@@ -1,4 +1,13 @@
-#Yolov5 inferencing and training for obejct dtection and segmentation
+# Yolov5 inferencing and training for obejct dtection and segmentation
+# Object Detection
+## Inferencing 
+* The command for inferencing using onnx model
+  ``` bash
+  python detect.py --onnx /path/to/your/best.onnx --source <path_to_your_video> --names /path/to/your/classes.names --img-size 416
+  ```
+```bash
+python3 detect_object.py --onnx /home/tanya/yolov5/runs/train/exp24/weights/best.onnx --source "./strawberry.mp4" --names ./classes.names --img-size 416
+  ```
 ## To train the model yolov5s-seg on custom data 
 ```bash
  python3 segment/train.py --weights yolov5s-seg.pt --data /home/tanya/seg/data.yaml --epochs 25 --img 640 --batch-size 16
