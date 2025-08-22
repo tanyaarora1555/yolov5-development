@@ -4,7 +4,7 @@ import onnxruntime as ort
 import yaml
 
 # Load class names from YAML
-yaml_path = "/home/tanya/seg/data.yaml"
+yaml_path = "./data.yaml"
 with open(yaml_path, "r") as f:
     data_yaml = yaml.safe_load(f)
 class_names = data_yaml.get("names", [])
@@ -28,7 +28,7 @@ def letterbox(img, new_shape=(640, 640), color=(114, 114, 114)):
     return img, r, (dw, dh)
 
 
-onnx_path = "/home/tanya/yolov5/best1.onnx"
+onnx_path = "./segmentation_weights/best1.onnx"
 session = ort.InferenceSession(onnx_path)
 input_name = session.get_inputs()[0].name
 output_names = [o.name for o in session.get_outputs()]
