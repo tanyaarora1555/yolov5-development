@@ -8,13 +8,15 @@ This project is organized into two main sections: one for object detection and o
 .
 ├── detection/
 │   ├── detection_weights/
-│   │   └── yolov5m_best.pt  
+│   │   ├── yolov5s_best.pt
+│   │   └── best.onnx
 │   ├── classes.names
 │   ├── detect_object.py
 │   └── strawberry.mp4
 ├── segmentation/
 │   ├── segmentation_weights/
-│   │   └── yolov5m_best.pt
+│   │   ├── yolov5s-seg_best.pt
+│   │   └── best1.onnx
 │   ├── data.yaml
 │   ├── mask_video.py
 │   └── papaya.mp4
